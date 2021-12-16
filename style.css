@@ -1,0 +1,198 @@
+/*GENERAL*/
+body {
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+/*NAVBAR*/
+.nav-link {
+    color: rgb(0, 177, 177);
+}
+
+.nav-link:hover {
+    color: rgb(0, 177, 177);
+}
+
+.nav-link:visited {
+    color: rgb(0, 177, 177);
+}
+
+.nav {
+    border: none;
+    border-bottom: 3px solid rgb(0, 177, 177);
+}
+
+/*ARTICLE*/
+.article {
+    padding-top: 20px;
+    
+}
+
+.article h1 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*FORMULARIO*/
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    padding: 10px;
+    }
+
+
+.form-section {
+    width: 100%;
+    margin: 8px;
+}
+
+
+.form-input {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 177, 177);
+    padding: 10px;
+}
+
+.form-input:focus {
+    
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background: linear-gradient(to bottom,  rgb(0, 0, 0), rgb(0, 99, 99));
+}
+
+.form-section-btn {
+    width: 100%;
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-input-btn {
+    background-color: rgb(0, 177, 177); 
+    color: rgb(0, 0, 0);
+    width: 30%;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    border-top: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+
+.form-input-btn:active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.form-input-btn:focus {
+    outline: none;
+
+}
+
+
+.form-input-btn:hover {
+    animation-name: botoncitos;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes botoncitos {
+    from{
+        background-color: rgb(0, 177, 177); 
+        color: rgb(0, 0, 0);
+    }
+    to {
+        background-color: rgb(2, 82, 82); 
+        color: rgb(0, 0, 0);        
+    }
+}
+
+/*ASIDE*/
+.aside {
+    padding:20;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px 0;   
+}
+
+.infoTurno {
+    background-color:rgb(34, 34, 34);
+    height: 300px;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    animation-name: animaturno;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.turno-asignado {
+    font-size:x-large;
+    font-family: sans-serif;
+}
+
+.texto-asignado {
+    font-family: sans-serif;
+}
+
+@keyframes animaturno {
+    from{
+        background-color: rgb(34, 34, 34); 
+        color: rgb(255, 255, 255);
+    }
+    to {
+        background-color: rgb(2, 82, 82); 
+        color: rgb(255, 255, 255);        
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.autor-container {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 40px;
+    padding: 6px;
+}
+
+.iconos-container {
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icono {
+    margin: 3px;
+}

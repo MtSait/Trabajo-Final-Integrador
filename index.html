@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ariel Matias Gómez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+
+    <title>Trabajo Final Integrador</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!--INICIO ENCABEZADO-->
+    <header>
+      <ul class="nav justify-content-center nav-tabs bg-dark">
+        
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">roBank</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Personas</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Préstamos</a></li>
+            <li><a class="dropdown-item" href="#">Inversiones</a></li>
+            <li><a class="dropdown-item" href="#">Otros Servicios</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Tarjeta de Débito</a></li>
+            <li><a class="dropdown-item" href="#">Tarjeta de Crédito</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cuentas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">MiPymes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Financiamiento</a></li>
+            <li><a class="dropdown-item" href="#">Inversiones</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Banca Electrónica</a></li>
+            <li><a class="dropdown-item" href="#">Comercio Exterior</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link disabled">Turnos</a>
+        </li>
+      </ul>
+    </header>
+    <!--FIN ENCABEZADO-->
+  
+    <!--INICIO MAIN-->
+    <div class="container-md" id="">
+
+      <!--BANNER-->
+      <img class="img-fluid" src="src/banner-banco.png" alt="">
+      
+      <div class="row" id="">
+
+        <!--INICIO ARTICLE-->
+        <div class="col-md-8 article" id="">
+          <h1>Solicitar Turnos</h1>
+
+          <!--INICIO FORMULARIO-->
+          <fieldset>
+            <legend>Datos Personales</legend>
+
+            <!--Nombre y Apellido-->
+            <form class="form-container" id="form" action="">
+              <div class="form-section"> 
+                <input type="text" class="form-input" name="inputName" id="inputName" placeholder="Nombre y Apellido *" autocomplete="off" required>
+              </div>
+ 
+              <!--CUIL-->
+              <div class="form-section">
+                <input type="number" class="form-input" name="inputCuil" id="inputCuil" placeholder="CUIL *" maxlength="11" required>
+              </div>
+
+              <!--E-mail-->
+              <div class="form-section">
+                <input type="email" class="form-input" name="inputEmail" id="inputEmail" placeholder="E-mail *" autocomplete="off" required>
+              </div>
+
+              <!--Telefono-->
+              <div class="form-section">
+                <input type="number" class="form-input" name="inputTel" id="inputTel" placeholder="Tel.">
+              </div>
+
+              <!--Fecha-->
+              <div class="form-section">
+                <input type="date" class="form-input" name="inputDate" id="inputDate" value="2021-12-20" required> 
+              </div>
+
+              <!--Hora-->
+              <div class="form-section">
+                <input type="time" class="form-input" name="inputTime" id="inputTime" value="08:00" min=”10:00:00″ max="18:00:00" step="3600" required>
+              </div>
+
+              <!--Botones-->
+              <div class="form-section-btn">
+                <input type="reset" class="form-input-btn" value="Borrar">
+                <input type="text" class="form-input-btn"  value="Enviar" onclick="mostrarDatos()">                
+              </div>
+            </form>
+          </fieldset>
+          <!--FIN FORMULARIO-->
+        </div>
+        <!--FIN ARTICLE-->
+
+        <!--INICIO ASIDE-->
+        <div class="col-md-4 aside" id="">
+          <div class="infoTurno" id="infoTurno">
+          </div>
+        </div>
+        <!--FIN ASIDE-->
+
+      </div>
+    </div>
+    <!--FIN MAIN-->
+
+    <!--INICIO PIE DE PÁGINA-->
+   <footer class="footer">
+
+          <div class="autor-container" id="">
+            <p>Autor: &nbsp; Ariel Matias Gómez - Diseño Web</p>
+          </div>
+         
+          <div class="iconos-container" id="">
+            <div id="" class="icono"><a href="https://github.com/MtSait" target="_blank"> <img src="src/github.png"/></a></div>
+  
+            <div id="" class="icono"><a href="https://www.linkedin.com/in/ariel-matias-gómez-67a02245/" target="_blank"> <img src="src/linkedin.png"/></a></div>
+  
+            <div id="" class="icono"><a href="https://www.instagram.com/matisait/" target="_blank"> <img src="src/instagram.png"/></a></div>
+
+          </div>
+
+      </footer>
+      <!--FIN PIE DE PÁGINA-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

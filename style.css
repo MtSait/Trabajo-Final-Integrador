@@ -2,7 +2,7 @@
 body {
     background-color: rgb(0, 0, 0);
     color:white;
-}
+   }
 
 /*NAVBAR*/
 .nav-link {
@@ -79,16 +79,17 @@ body {
 
 .form-input-btn {
     background-color: rgb(0, 177, 177); 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 30%;
     border-radius: 5px;
     height: 40px;
     border: none;
-    border-top: 3px solid rgb(0, 0, 0);
-    padding: 10px;
+    padding: 8px;
     margin: 2px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
    
 }
 
@@ -124,7 +125,6 @@ body {
 
 /*ASIDE*/
 .aside {
-    padding:20;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -135,7 +135,6 @@ body {
 .infoTurno {
     background-color:rgb(34, 34, 34);
     height: 300px;
-    width: 300px;
     padding: 25px;
     text-align: center;
     border-radius: 15px;
@@ -143,6 +142,16 @@ body {
     animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 254, 254);
+    padding-top: 35px;
+
+
 }
 
 .turno-asignado {
@@ -163,6 +172,14 @@ body {
         background-color: rgb(2, 82, 82); 
         color: rgb(255, 255, 255);        
     }
+}
+
+.img-calendario {
+    width: 60px;
+    position: relative;
+}
+.img-calendario img {
+
 }
 
 /*FOOTER*/
